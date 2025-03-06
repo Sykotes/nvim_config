@@ -19,7 +19,7 @@ return {
   		ensure_installed = {
   			"vim", "lua", "vimdoc",
        "html", "css", "python",
-        "zig", "rust",
+        "zig", "rust", "haskell",
   		},
   	},
   },
