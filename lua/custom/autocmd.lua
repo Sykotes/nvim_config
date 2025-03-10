@@ -9,3 +9,12 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   end,
   group = autocmd_group
 })
+
+vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+  pattern = { "*.hs" },
+  desc = "auto format haskell on save" ,
+  callback = function ()
+      vim.cmd(":silent !find . -name \"*.hs\" -type f -exec ormolu -i {} +")
+  end,
+  group = autocmd_group
+})
