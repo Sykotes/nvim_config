@@ -17,6 +17,13 @@ return {
   },
 
   {
+    "j-hui/fidget.nvim",
+    opts = {
+      -- options
+    },
+  },
+
+  {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {

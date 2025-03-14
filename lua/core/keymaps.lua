@@ -9,4 +9,7 @@ map({ "n", "v" }, "<leader>y", '"+y')
 map("n", "<leader>p", '"+p')
 map("v", "<leader>p", '"+P')
 
+-- Remove all highlighting
+vim.api.nvim_set_keymap('n', '<Esc>', ':let @/ = ""<CR><Esc>', { noremap = true, silent = true })
+
 vim.opt.timeoutlen = 300
